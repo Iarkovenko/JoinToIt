@@ -5,7 +5,9 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-overlays": "^1.2.0",
+    "react-scripts": "3.0.1",
+    "sweetalert2": "^8.14.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,5 +29,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@fullcalendar/core": "^4.2.0",
+    "@fullcalendar/daygrid": "^4.2.0",
+    "@fullcalendar/interaction": "^4.2.0",
+    "@fullcalendar/react": "^4.2.0",
+    "@fullcalendar/timegrid": "^4.2.0"
   }
 }
