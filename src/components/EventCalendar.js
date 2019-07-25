@@ -70,12 +70,15 @@ export default class EventCalendar extends React.Component {
   };
 
   render() {
+    console.log('myCalendar', this.myCalendar.current.hasOwnProperty)
     return (
       <Fragment>
         <div className='app'>
           <div className='app-top' />
           <div className='app-calendar'>
             <FullCalendar
+              ref={this.myCalendar}
+              schedulerLicenseKey='GPL-My-Project-Is-Open-Source'
               defaultView='dayGridMonth'
               header={{
                 left: 'prev,next today',
@@ -83,7 +86,6 @@ export default class EventCalendar extends React.Component {
                 right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek',
               }}
               plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
-              ref={this.myCalendar}
               weekends={this.state.calendarWeekends}
               events={this.state.calendarEvents}
               dateClick={this.handleDateClick}
